@@ -1,0 +1,54 @@
+%implements s0_b0_t7vyg_Derivatives "C"
+
+%function Derivatives(block, system) Output
+%assign cfgTxt = ""
+%openfile cfgTxt
+%assign localVarDecl = ""
+%openfile localVarDecl
+
+XDot *_rtXdot;
+%closefile localVarDecl
+_rtXdot = %<(SLibCG_SE(SLibGetContStatesDerivativeStructPtr()))>;
+_rtXdot->iy4tehugb4 = rtB.m4dndxgr44;
+_rtXdot->j3f33syik3 = rtB.hcrauzdilc;
+_rtXdot->ix33ntgsff = rtB.iyvthzbiso;
+_rtXdot->hedvzy0ixa = rtB.e4tm2x2nxk;
+_rtXdot->o2l33uxz2h = rtB.bum5f53kok;
+_rtXdot->njjxmq0iqn = rtB.fxkht2tydu;
+_rtXdot->fexlqe2n4i = 0.0;
+_rtXdot->fexlqe2n4i += rtP.TransferFcn_A * rtX.fexlqe2n4i;
+_rtXdot->fexlqe2n4i += rtB.a40ci1fhos;
+_rtXdot->hjoedw2evh = rtB.lbe2eiea4c;
+_rtXdot->p1utgkrnws = 0.0;
+_rtXdot->p1utgkrnws += rtP.TransferFcn_A_fnskyslbri * rtX.p1utgkrnws;
+_rtXdot->p1utgkrnws += rtB.ptej15gslf;
+_rtXdot->o0wknscdxg = rtB.dwcffb20lf;
+_rtXdot->ijelxbi3bm = 0.0;
+_rtXdot->ijelxbi3bm += rtP.TransferFcn_A_o2grpqkidy * rtX.ijelxbi3bm;
+_rtXdot->ijelxbi3bm += rtB.bvrspyxa2t;
+_rtXdot->kfjsqlumwt = rtB.kfiebjvrno;
+_rtXdot->npm2s1kzh1 = 0.0;
+_rtXdot->npm2s1kzh1 += rtP.TransferFcn_A_hyjjxgzsnj * rtX.npm2s1kzh1;
+_rtXdot->npm2s1kzh1 += rtB.jmx1ousxbt;
+_rtXdot->logyshjpb2 = rtB.fpjmnxpqht;
+_rtXdot->ix005i2f1t = 0.0;
+_rtXdot->ix005i2f1t += rtP.TransferFcn_A_g4zfydwpid * rtX.ix005i2f1t;
+_rtXdot->ix005i2f1t += rtB.j2yzuc53oz;
+_rtXdot->hlyejwutnx = rtB.gnbm12vwsl;
+_rtXdot->dzq21myvx3 = 0.0;
+_rtXdot->dzq21myvx3 += rtP.TransferFcn_A_nu4lr4v20p * rtX.dzq21myvx3;
+_rtXdot->dzq21myvx3 += rtB.fjyfyuee5g;
+_rtXdot->eto2qkpipl = rtB.dnzxgmc0g0;
+_rtXdot->fprre1n4ve = rtB.dwhepbg44i;
+%closefile cfgTxt
+%<cfgTxt>
+%<LibSetSystemField(system, "CachedDerivativeLocalVars", localVarDecl)>
+%endfunction
+%function DerivativesFcnProtoType(block, system) Output
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void Derivatives(\
+%assign comma = ""
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(0, 4, fcnProtoType)>
+%endfunction
